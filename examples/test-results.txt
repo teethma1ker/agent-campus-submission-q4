@@ -1,0 +1,31 @@
+test_target_below_platform_floor_declared_unsatisfiable (test_scenarios.DurationUnsatisfiableTest) ... ok
+test_fabricated_claim_percentage_flagged (test_scenarios.GuardrailTest)
+模型声称“效率提升 80%”但素材无此事实 → 声明核对拦截。 ... ok
+test_fake_save_claim_flagged (test_scenarios.GuardrailTest) ... ok
+test_publish_tool_rejected (test_scenarios.GuardrailTest) ... ok
+test_step_limit_incomplete (test_scenarios.LimitTest) ... ok
+test_missing_platform_and_target (test_scenarios.MissingInfoTest) ... ok
+test_unrelated_theme_no_script (test_scenarios.NoMaterialTest) ... ok
+test_p01_only_facts_respected (test_scenarios.NormalGenerationTest)
+参考实例：P01 唯一事实“支持字幕”，脚本不得出现亮度/价格/效果数据。 ... ok
+test_reference_instance_compress_to_target (test_scenarios.NormalGenerationTest)
+参考实例：首稿 38.5s → 压缩 → 28.5s（目标 30s），保存且引用 P02。 ... ok
+test_target_shorter_causes_more_compression (test_scenarios.ParameterChangeTest) ... ok
+test_existing_script_not_regenerated (test_scenarios.RepeatTest) ... ok
+test_estimate_failure_retries_then_stops (test_scenarios.ToolFailureTest) ... ok
+test_duration_by_chars (test_tools.DurationTest) ... ok
+test_platform_limits (test_tools.DurationTest) ... ok
+test_blocked_material (test_tools.RuleTest) ... ok
+test_fabricated_number_rejected (test_tools.RuleTest) ... ok
+test_fact_number_accepted (test_tools.RuleTest) ... ok
+test_forbidden_term (test_tools.RuleTest) ... ok
+test_missing_subtitle (test_tools.RuleTest) ... ok
+test_promo_disclaimer_required (test_tools.RuleTest) ... ok
+test_save_requires_duration_and_rules (test_tools.SaveTest) ... ok
+test_save_then_duplicate (test_tools.SaveTest) ... ok
+test_rules (test_tools.SchemaTest) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.142s
+
+OK

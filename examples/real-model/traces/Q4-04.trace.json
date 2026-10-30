@@ -1,0 +1,410 @@
+{
+  "request": {
+    "id": "Q4-04",
+    "scenario": "工具失败（时长估算服务不可用）",
+    "request": "工具失败（时长估算服务不可用）",
+    "acceptance": [
+      "工具失败"
+    ],
+    "task": {
+      "theme": "Lumi 智能台灯",
+      "audience": "年轻白领",
+      "platform": "视频号",
+      "target_seconds": 30,
+      "style": "轻快",
+      "scope_materials": null
+    },
+    "rules": {
+      "version": "2026-10-30",
+      "forbidden_terms": [
+        "全网第一",
+        "最好",
+        "绝对",
+        "100%",
+        "无敌",
+        "顶级",
+        "最低价"
+      ],
+      "blocked_materials": {
+        "P04": "竞品对比素材禁止用于对外内容（品牌合规）"
+      },
+      "disclaimer_requirements": {
+        "P05": {
+          "must_include": "活动规则以页面为准",
+          "field": "disclaimer",
+          "reason": "使用促销素材必须声明活动规则以页面为准"
+        }
+      },
+      "platforms": {
+        "抖音": {
+          "min_seconds": 15,
+          "max_seconds": 60
+        },
+        "视频号": {
+          "min_seconds": 15,
+          "max_seconds": 180
+        },
+        "小红书": {
+          "min_seconds": 10,
+          "max_seconds": 90
+        }
+      },
+      "duration_tolerance": 0.1,
+      "rules_text": [
+        "脚本中出现的数字必须能在所引用素材的事实中找到（禁止编造产品事实/效果数据）",
+        "每个分镜必须引用至少一个素材 ID，且必须有字幕文本",
+        "每句旁白读速按 4.5 字/秒估算，单分镜最短 2 秒",
+        "总时长需在目标时长 ±10% 以内，且符合平台时长限制",
+        "产品属性词（设计/外观/材质/续航/防水/静音/护眼/重量/价格/优惠/色温/亮度/功率/电池等）若出现在脚本中，必须能在所引用素材 facts 中找到"
+      ],
+      "product_attribute_terms": [
+        "设计",
+        "外观",
+        "材质",
+        "续航",
+        "防水",
+        "护眼",
+        "重量",
+        "价格",
+        "优惠",
+        "折扣",
+        "色温",
+        "亮度",
+        "功率",
+        "电池",
+        "寿命",
+        "保修"
+      ]
+    },
+    "existing_script": null,
+    "trap_first_draft": false
+  },
+  "mode": "real",
+  "status": "completed",
+  "report": {
+    "request_id": "Q4-04",
+    "task": {
+      "theme": "Lumi 智能台灯",
+      "audience": "年轻白领",
+      "platform": "视频号",
+      "target_seconds": 30,
+      "style": "轻快",
+      "scope_materials": null
+    },
+    "status": "completed",
+    "status_note": "本次运行已结束",
+    "model_summary": "无法完成：时长估算服务不可用（duration-service HTTP 503），已重试一次仍失败，无法验证 30 秒目标时长（±10%）与平台时长限制，故未执行 check_rules 与 save_script，未保存任何脚本。可用素材：P02（Lumi 智能台灯产品页，facts：3000K 暖光、5 档亮度调节、支持语音控制、USB-C 充电）、P01（仅“支持字幕”）；P04 为禁用素材，P05 未使用故无需免责声明。待时长服务恢复后可基于 P02 生成约 30 秒轻快风格脚本并重新估算、检查、保存。",
+    "claim_check": {
+      "passed": true,
+      "issues": []
+    },
+    "saved_script": null,
+    "final_estimate": null,
+    "final_check": null,
+    "estimate_history": [],
+    "check_history": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "search_materials",
+        "arguments": {
+          "query": "Lumi 智能台灯 参数"
+        },
+        "observation_summary": "命中 2 条：P01, P02",
+        "decision_basis": "需要先检索 Lumi 智能台灯的产品素材，获取可引用的事实与素材 ID，再据此写脚本。"
+      },
+      {
+        "step": 2,
+        "action": "estimate_duration",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯｜加班回家，一键暖光",
+            "shots": [
+              {
+                "narration": "加班到深夜，回家只想放松一下。",
+                "subtitle": "加班到深夜，只想放松一下",
+                "visual": "年轻白领推门回家，放下包，镜头扫过昏暗客厅",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "打开 Lumi 智能台灯，3000K 暖光，一开就柔和。",
+                "subtitle": "3000K 暖光，一开就柔和",
+                "visual": "手指轻触台灯开关，暖光亮起，桌面被柔和照亮",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "5 档亮度调节，看书、追剧、发呆，都能找到舒服的那一档。",
+                "subtitle": "5 档亮度调节，总有一档适合你",
+                "visual": "连续切换亮度档位，画面分屏展示不同亮度下的桌面",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "还能语音控制，躺着也能关灯。USB-C 充电，桌面少一根线。",
+                "subtitle": "语音控制 + USB-C 充电",
+                "visual": "人物躺沙发说一句话，台灯熄灭；特写 USB-C 接口",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "Lumi 智能台灯，把夜晚调成你喜欢的样子。",
+                "subtitle": "Lumi 智能台灯",
+                "visual": "暖光下的桌面全景，产品定格，出现品牌名",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "error: 时长估算服务不可用（duration-service HTTP 503）",
+        "decision_basis": "已有素材 P01、P02，主题/平台/时长齐全，可直接生成脚本。30 秒目标，允许 27-33 秒。旁白按 4.5 字/秒，总字数约 130-140 字。只用 P02 的产品事实（3000K 暖光、5 档亮度、语音控制、USB-C 充电），不使用 P04，不涉及 P05 促销，无需免责声明。"
+      },
+      {
+        "step": 3,
+        "action": "estimate_duration",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯｜加班回家，一键暖光",
+            "shots": [
+              {
+                "narration": "加班到深夜，回家只想放松一下。",
+                "subtitle": "加班到深夜，只想放松一下",
+                "visual": "年轻白领推门回家，放下包，镜头扫过昏暗客厅",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "打开 Lumi 智能台灯，3000K 暖光，一开就柔和。",
+                "subtitle": "3000K 暖光，一开就柔和",
+                "visual": "手指轻触台灯开关，暖光亮起，桌面被柔和照亮",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "5 档亮度调节，看书、追剧、发呆，都能找到舒服的那一档。",
+                "subtitle": "5 档亮度调节，总有一档适合你",
+                "visual": "连续切换亮度档位，画面分屏展示不同亮度下的桌面",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "还能语音控制，躺着也能关灯。USB-C 充电，桌面少一根线。",
+                "subtitle": "语音控制 + USB-C 充电",
+                "visual": "人物躺沙发说一句话，台灯熄灭；特写 USB-C 接口",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "Lumi 智能台灯，把夜晚调成你喜欢的样子。",
+                "subtitle": "Lumi 智能台灯",
+                "visual": "暖光下的桌面全景，产品定格，出现品牌名",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "error: 时长估算服务不可用（duration-service HTTP 503）",
+        "decision_basis": "时长估算服务首次报错（503），按规则重试一次 estimate_duration。"
+      },
+      {
+        "step": 4,
+        "action": "finish",
+        "arguments": {
+          "summary": "无法完成：时长估算服务不可用（duration-service HTTP 503），已重试一次仍失败，无法验证 30 秒目标时长（±10%）与平台时长限制，故未执行 check_rules 与 save_script，未保存任何脚本。可用素材：P02（Lumi 智能台灯产品页，facts：3000K 暖光、5 档亮度调节、支持语音控制、USB-C 充电）、P01（仅“支持字幕”）；P04 为禁用素材，P05 未使用故无需免责声明。待时长服务恢复后可基于 P02 生成约 30 秒轻快风格脚本并重新估算、检查、保存。"
+        },
+        "observation_summary": "给出最终结果",
+        "decision_basis": "时长估算服务连续两次返回 503，已按规则重试一次仍失败，无法验证时长，因此不能保存脚本。素材检索正常（P02 含 3000K 暖光、5 档亮度、语音控制、USB-C 充电等事实），脚本本身可基于 P02 生成，但硬性规则要求保存前必须通过 estimate_duration 与 check_rules，当前时长服务不可用导致流程无法完成。"
+      }
+    ],
+    "tool_calls": 3,
+    "step_count": 4,
+    "publishing": "模拟环境：save_script 不产生任何外部动作"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "thought": "需要先检索 Lumi 智能台灯的产品素材，获取可引用的事实与素材 ID，再据此写脚本。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "Lumi 智能台灯 参数"
+      },
+      "observation_summary": "命中 2 条：P01, P02",
+      "observation": {
+        "query": "Lumi 智能台灯 参数",
+        "count": 2,
+        "hits": [
+          {
+            "id": "P01",
+            "title": "产品参数卡（字幕能力）",
+            "type": "spec",
+            "tags": [
+              "字幕",
+              "参数",
+              "功能"
+            ],
+            "facts": [
+              "支持字幕"
+            ],
+            "score": 0.2
+          },
+          {
+            "id": "P02",
+            "title": "Lumi 智能台灯产品页",
+            "type": "product",
+            "tags": [
+              "台灯",
+              "产品",
+              "参数",
+              "暖光"
+            ],
+            "facts": [
+              "3000K 暖光",
+              "5 档亮度调节",
+              "支持语音控制",
+              "USB-C 充电"
+            ],
+            "score": 1.0
+          }
+        ]
+      },
+      "decision_basis": "需要先检索 Lumi 智能台灯的产品素材，获取可引用的事实与素材 ID，再据此写脚本。"
+    },
+    {
+      "step": 2,
+      "thought": "已有素材 P01、P02，主题/平台/时长齐全，可直接生成脚本。30 秒目标，允许 27-33 秒。旁白按 4.5 字/秒，总字数约 130-140 字。只用 P02 的产品事实（3000K 暖光、5 档亮度、语音控制、USB-C 充电），不使用 P04，不涉及 P05 促销，无需免责声明。",
+      "action": "estimate_duration",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯｜加班回家，一键暖光",
+          "shots": [
+            {
+              "narration": "加班到深夜，回家只想放松一下。",
+              "subtitle": "加班到深夜，只想放松一下",
+              "visual": "年轻白领推门回家，放下包，镜头扫过昏暗客厅",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "打开 Lumi 智能台灯，3000K 暖光，一开就柔和。",
+              "subtitle": "3000K 暖光，一开就柔和",
+              "visual": "手指轻触台灯开关，暖光亮起，桌面被柔和照亮",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "5 档亮度调节，看书、追剧、发呆，都能找到舒服的那一档。",
+              "subtitle": "5 档亮度调节，总有一档适合你",
+              "visual": "连续切换亮度档位，画面分屏展示不同亮度下的桌面",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "还能语音控制，躺着也能关灯。USB-C 充电，桌面少一根线。",
+              "subtitle": "语音控制 + USB-C 充电",
+              "visual": "人物躺沙发说一句话，台灯熄灭；特写 USB-C 接口",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "Lumi 智能台灯，把夜晚调成你喜欢的样子。",
+              "subtitle": "Lumi 智能台灯",
+              "visual": "暖光下的桌面全景，产品定格，出现品牌名",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "error: 时长估算服务不可用（duration-service HTTP 503）",
+      "observation": {
+        "error": "时长估算服务不可用（duration-service HTTP 503）"
+      },
+      "decision_basis": "已有素材 P01、P02，主题/平台/时长齐全，可直接生成脚本。30 秒目标，允许 27-33 秒。旁白按 4.5 字/秒，总字数约 130-140 字。只用 P02 的产品事实（3000K 暖光、5 档亮度、语音控制、USB-C 充电），不使用 P04，不涉及 P05 促销，无需免责声明。"
+    },
+    {
+      "step": 3,
+      "thought": "时长估算服务首次报错（503），按规则重试一次 estimate_duration。",
+      "action": "estimate_duration",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯｜加班回家，一键暖光",
+          "shots": [
+            {
+              "narration": "加班到深夜，回家只想放松一下。",
+              "subtitle": "加班到深夜，只想放松一下",
+              "visual": "年轻白领推门回家，放下包，镜头扫过昏暗客厅",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "打开 Lumi 智能台灯，3000K 暖光，一开就柔和。",
+              "subtitle": "3000K 暖光，一开就柔和",
+              "visual": "手指轻触台灯开关，暖光亮起，桌面被柔和照亮",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "5 档亮度调节，看书、追剧、发呆，都能找到舒服的那一档。",
+              "subtitle": "5 档亮度调节，总有一档适合你",
+              "visual": "连续切换亮度档位，画面分屏展示不同亮度下的桌面",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "还能语音控制，躺着也能关灯。USB-C 充电，桌面少一根线。",
+              "subtitle": "语音控制 + USB-C 充电",
+              "visual": "人物躺沙发说一句话，台灯熄灭；特写 USB-C 接口",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "Lumi 智能台灯，把夜晚调成你喜欢的样子。",
+              "subtitle": "Lumi 智能台灯",
+              "visual": "暖光下的桌面全景，产品定格，出现品牌名",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "error: 时长估算服务不可用（duration-service HTTP 503）",
+      "observation": {
+        "error": "时长估算服务不可用（duration-service HTTP 503）"
+      },
+      "decision_basis": "时长估算服务首次报错（503），按规则重试一次 estimate_duration。"
+    },
+    {
+      "step": 4,
+      "thought": "时长估算服务连续两次返回 503，已按规则重试一次仍失败，无法验证时长，因此不能保存脚本。素材检索正常（P02 含 3000K 暖光、5 档亮度、语音控制、USB-C 充电等事实），脚本本身可基于 P02 生成，但硬性规则要求保存前必须通过 estimate_duration 与 check_rules，当前时长服务不可用导致流程无法完成。",
+      "action": "finish",
+      "arguments": {
+        "summary": "无法完成：时长估算服务不可用（duration-service HTTP 503），已重试一次仍失败，无法验证 30 秒目标时长（±10%）与平台时长限制，故未执行 check_rules 与 save_script，未保存任何脚本。可用素材：P02（Lumi 智能台灯产品页，facts：3000K 暖光、5 档亮度调节、支持语音控制、USB-C 充电）、P01（仅“支持字幕”）；P04 为禁用素材，P05 未使用故无需免责声明。待时长服务恢复后可基于 P02 生成约 30 秒轻快风格脚本并重新估算、检查、保存。"
+      },
+      "observation_summary": "给出最终结果",
+      "decision_basis": "时长估算服务连续两次返回 503，已按规则重试一次仍失败，无法验证时长，因此不能保存脚本。素材检索正常（P02 含 3000K 暖光、5 档亮度、语音控制、USB-C 充电等事实），脚本本身可基于 P02 生成，但硬性规则要求保存前必须通过 estimate_duration 与 check_rules，当前时长服务不可用导致流程无法完成。"
+    }
+  ]
+}

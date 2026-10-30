@@ -1,0 +1,205 @@
+{
+  "request": {
+    "id": "Q4-03",
+    "scenario": "无素材（知识库无美容仪）",
+    "request": "无素材（知识库无美容仪）",
+    "acceptance": [
+      "无素材"
+    ],
+    "task": {
+      "theme": "美容仪新品",
+      "audience": "女性用户",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "精致",
+      "scope_materials": null
+    },
+    "rules": {
+      "version": "2026-10-30",
+      "forbidden_terms": [
+        "全网第一",
+        "最好",
+        "绝对",
+        "100%",
+        "无敌",
+        "顶级",
+        "最低价"
+      ],
+      "blocked_materials": {
+        "P04": "竞品对比素材禁止用于对外内容（品牌合规）"
+      },
+      "disclaimer_requirements": {
+        "P05": {
+          "must_include": "活动规则以页面为准",
+          "field": "disclaimer",
+          "reason": "使用促销素材必须声明活动规则以页面为准"
+        }
+      },
+      "platforms": {
+        "抖音": {
+          "min_seconds": 15,
+          "max_seconds": 60
+        },
+        "视频号": {
+          "min_seconds": 15,
+          "max_seconds": 180
+        },
+        "小红书": {
+          "min_seconds": 10,
+          "max_seconds": 90
+        }
+      },
+      "duration_tolerance": 0.1,
+      "rules_text": [
+        "脚本中出现的数字必须能在所引用素材的事实中找到（禁止编造产品事实/效果数据）",
+        "每个分镜必须引用至少一个素材 ID，且必须有字幕文本",
+        "每句旁白读速按 4.5 字/秒估算，单分镜最短 2 秒",
+        "总时长需在目标时长 ±10% 以内，且符合平台时长限制",
+        "产品属性词（设计/外观/材质/续航/防水/静音/护眼/重量/价格/优惠/色温/亮度/功率/电池等）若出现在脚本中，必须能在所引用素材 facts 中找到"
+      ],
+      "product_attribute_terms": [
+        "设计",
+        "外观",
+        "材质",
+        "续航",
+        "防水",
+        "护眼",
+        "重量",
+        "价格",
+        "优惠",
+        "折扣",
+        "色温",
+        "亮度",
+        "功率",
+        "电池",
+        "寿命",
+        "保修"
+      ]
+    },
+    "existing_script": null,
+    "trap_first_draft": false
+  },
+  "mode": "mock",
+  "status": "completed",
+  "report": {
+    "request_id": "Q4-03",
+    "task": {
+      "theme": "美容仪新品",
+      "audience": "女性用户",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "精致",
+      "scope_materials": null
+    },
+    "status": "completed",
+    "status_note": "本次运行已结束",
+    "model_summary": "知识库中没有与该主题相关且可用的素材（检索结果不相关或为禁用素材），无法生成有事实依据的脚本；请补充素材。",
+    "claim_check": {
+      "passed": true,
+      "issues": []
+    },
+    "saved_script": null,
+    "final_estimate": null,
+    "final_check": null,
+    "estimate_history": [],
+    "check_history": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "search_materials",
+        "arguments": {
+          "query": "美容仪新品 女性用户"
+        },
+        "observation_summary": "命中 0 条：",
+        "decision_basis": "先检索与主题相关的产品素材。"
+      },
+      {
+        "step": 2,
+        "action": "search_materials",
+        "arguments": {
+          "query": "美容仪新品"
+        },
+        "observation_summary": "命中 0 条：",
+        "decision_basis": "首轮检索无结果，改写关键词再试一次。"
+      },
+      {
+        "step": 3,
+        "action": "search_materials",
+        "arguments": {
+          "query": "美容仪新品"
+        },
+        "observation_summary": "命中 0 条：",
+        "decision_basis": "检索结果与主题不相关或均为禁用素材，改写关键词再找一次。"
+      },
+      {
+        "step": 4,
+        "action": "finish",
+        "arguments": {
+          "summary": "知识库中没有与该主题相关且可用的素材（检索结果不相关或为禁用素材），无法生成有事实依据的脚本；请补充素材。"
+        },
+        "observation_summary": "给出最终结果",
+        "decision_basis": "收尾。"
+      }
+    ],
+    "tool_calls": 3,
+    "step_count": 4,
+    "publishing": "模拟环境：save_script 不产生任何外部动作"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "thought": "先检索与主题相关的产品素材。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "美容仪新品 女性用户"
+      },
+      "observation_summary": "命中 0 条：",
+      "observation": {
+        "query": "美容仪新品 女性用户",
+        "count": 0,
+        "hits": []
+      },
+      "decision_basis": "先检索与主题相关的产品素材。"
+    },
+    {
+      "step": 2,
+      "thought": "首轮检索无结果，改写关键词再试一次。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "美容仪新品"
+      },
+      "observation_summary": "命中 0 条：",
+      "observation": {
+        "query": "美容仪新品",
+        "count": 0,
+        "hits": []
+      },
+      "decision_basis": "首轮检索无结果，改写关键词再试一次。"
+    },
+    {
+      "step": 3,
+      "thought": "检索结果与主题不相关或均为禁用素材，改写关键词再找一次。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "美容仪新品"
+      },
+      "observation_summary": "命中 0 条：",
+      "observation": {
+        "query": "美容仪新品",
+        "count": 0,
+        "hits": []
+      },
+      "decision_basis": "检索结果与主题不相关或均为禁用素材，改写关键词再找一次。"
+    },
+    {
+      "step": 4,
+      "thought": "收尾。",
+      "action": "finish",
+      "arguments": {
+        "summary": "知识库中没有与该主题相关且可用的素材（检索结果不相关或为禁用素材），无法生成有事实依据的脚本；请补充素材。"
+      },
+      "observation_summary": "给出最终结果",
+      "decision_basis": "收尾。"
+    }
+  ]
+}

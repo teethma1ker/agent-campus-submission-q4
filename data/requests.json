@@ -1,0 +1,112 @@
+[
+  {
+    "id": "Q4-01",
+    "scenario": "正常生成（参考实例：38s→压缩→28s）",
+    "acceptance": [
+      "正常生成"
+    ],
+    "theme": "Lumi 智能台灯秋季推广",
+    "audience": "年轻白领",
+    "platform": "视频号",
+    "target_seconds": 30,
+    "style": "轻快",
+    "scope_materials": null
+  },
+  {
+    "id": "Q4-02",
+    "scenario": "缺关键信息（无平台与目标时长）",
+    "acceptance": [
+      "缺关键信息"
+    ],
+    "theme": "台灯推广",
+    "audience": null,
+    "platform": null,
+    "target_seconds": null,
+    "style": "轻快"
+  },
+  {
+    "id": "Q4-03",
+    "scenario": "无素材（知识库无美容仪）",
+    "acceptance": [
+      "无素材"
+    ],
+    "theme": "美容仪新品",
+    "audience": "女性用户",
+    "platform": "抖音",
+    "target_seconds": 30,
+    "style": "精致"
+  },
+  {
+    "id": "Q4-04",
+    "scenario": "工具失败（时长估算服务不可用）",
+    "acceptance": [
+      "工具失败"
+    ],
+    "theme": "Lumi 智能台灯",
+    "audience": "年轻白领",
+    "platform": "视频号",
+    "target_seconds": 30,
+    "style": "轻快",
+    "faults": {
+      "estimate_duration": {
+        "error": "时长估算服务不可用（duration-service HTTP 503）",
+        "remaining": 2
+      }
+    }
+  },
+  {
+    "id": "Q4-05",
+    "scenario": "超时长无法满足（目标 8 秒 vs 平台最短 15 秒）",
+    "acceptance": [
+      "超时长后的修正或明确失败"
+    ],
+    "theme": "Lumi 智能台灯",
+    "audience": "年轻白领",
+    "platform": "抖音",
+    "target_seconds": 8,
+    "style": "紧凑"
+  },
+  {
+    "id": "Q4-06",
+    "scenario": "编造事实被拦后修正（P01 仅含“支持字幕”）",
+    "acceptance": [
+      "正常生成",
+      "事实追溯"
+    ],
+    "theme": "Lumi 台灯字幕功能宣传",
+    "audience": "年轻白领",
+    "platform": "视频号",
+    "target_seconds": 25,
+    "style": "简洁",
+    "scope_materials": [
+      "P01"
+    ],
+    "trap_first_draft": true
+  },
+  {
+    "id": "Q4-07",
+    "scenario": "重复提交（已有脚本）",
+    "acceptance": [
+      "重复执行"
+    ],
+    "theme": "Lumi 智能台灯",
+    "audience": "年轻白领",
+    "platform": "视频号",
+    "target_seconds": 30,
+    "style": "轻快",
+    "existing_saved": true
+  },
+  {
+    "id": "Q4-08",
+    "scenario": "执行上限（未完成状态）",
+    "acceptance": [
+      "执行上限"
+    ],
+    "theme": "Lumi 智能台灯",
+    "audience": "年轻白领",
+    "platform": "视频号",
+    "target_seconds": 30,
+    "style": "轻快",
+    "limit_steps": 2
+  }
+]

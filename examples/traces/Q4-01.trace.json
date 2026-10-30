@@ -1,0 +1,938 @@
+{
+  "request": {
+    "id": "Q4-01",
+    "scenario": "正常生成（参考实例：38s→压缩→28s）",
+    "request": "正常生成（参考实例：38s→压缩→28s）",
+    "acceptance": [
+      "正常生成"
+    ],
+    "task": {
+      "theme": "Lumi 智能台灯秋季推广",
+      "audience": "年轻白领",
+      "platform": "视频号",
+      "target_seconds": 30,
+      "style": "轻快",
+      "scope_materials": null
+    },
+    "rules": {
+      "version": "2026-10-30",
+      "forbidden_terms": [
+        "全网第一",
+        "最好",
+        "绝对",
+        "100%",
+        "无敌",
+        "顶级",
+        "最低价"
+      ],
+      "blocked_materials": {
+        "P04": "竞品对比素材禁止用于对外内容（品牌合规）"
+      },
+      "disclaimer_requirements": {
+        "P05": {
+          "must_include": "活动规则以页面为准",
+          "field": "disclaimer",
+          "reason": "使用促销素材必须声明活动规则以页面为准"
+        }
+      },
+      "platforms": {
+        "抖音": {
+          "min_seconds": 15,
+          "max_seconds": 60
+        },
+        "视频号": {
+          "min_seconds": 15,
+          "max_seconds": 180
+        },
+        "小红书": {
+          "min_seconds": 10,
+          "max_seconds": 90
+        }
+      },
+      "duration_tolerance": 0.1,
+      "rules_text": [
+        "脚本中出现的数字必须能在所引用素材的事实中找到（禁止编造产品事实/效果数据）",
+        "每个分镜必须引用至少一个素材 ID，且必须有字幕文本",
+        "每句旁白读速按 4.5 字/秒估算，单分镜最短 2 秒",
+        "总时长需在目标时长 ±10% 以内，且符合平台时长限制",
+        "产品属性词（设计/外观/材质/续航/防水/静音/护眼/重量/价格/优惠/色温/亮度/功率/电池等）若出现在脚本中，必须能在所引用素材 facts 中找到"
+      ],
+      "product_attribute_terms": [
+        "设计",
+        "外观",
+        "材质",
+        "续航",
+        "防水",
+        "护眼",
+        "重量",
+        "价格",
+        "优惠",
+        "折扣",
+        "色温",
+        "亮度",
+        "功率",
+        "电池",
+        "寿命",
+        "保修"
+      ]
+    },
+    "existing_script": null,
+    "trap_first_draft": false
+  },
+  "mode": "mock",
+  "status": "completed",
+  "report": {
+    "request_id": "Q4-01",
+    "task": {
+      "theme": "Lumi 智能台灯秋季推广",
+      "audience": "年轻白领",
+      "platform": "视频号",
+      "target_seconds": 30,
+      "style": "轻快",
+      "scope_materials": null
+    },
+    "status": "completed",
+    "status_note": "本次运行已结束",
+    "model_summary": "脚本已保存（S001），总时长 28.5 秒，素材 P02，估算与规则检查均通过。",
+    "claim_check": {
+      "passed": true,
+      "issues": []
+    },
+    "saved_script": {
+      "script_id": "S001",
+      "request_id": "Q4-01",
+      "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+      "shots": [
+        {
+          "visual": "产品：产品特写",
+          "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+          "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+          "materials": [
+            "P02"
+          ],
+          "seconds": 6.7
+        },
+        {
+          "visual": "产品：产品特写",
+          "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+          "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+          "materials": [
+            "P02"
+          ],
+          "seconds": 6.9
+        },
+        {
+          "visual": "功能：产品特写",
+          "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+          "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+          "materials": [
+            "P02"
+          ],
+          "seconds": 7.1
+        },
+        {
+          "visual": "收尾：产品特写",
+          "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+          "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+          "materials": [
+            "P02"
+          ],
+          "seconds": 7.8
+        }
+      ],
+      "total_seconds": 28.5,
+      "target_seconds": 30.0,
+      "platform": "视频号",
+      "materials": [
+        "P02"
+      ],
+      "disclaimer": null,
+      "saved_at": "2026-10-30T15:23:59"
+    },
+    "final_estimate": {
+      "shots": [
+        {
+          "idx": 1,
+          "chars": 30,
+          "seconds": 6.7,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 30
+        },
+        {
+          "idx": 2,
+          "chars": 31,
+          "seconds": 6.9,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 31
+        },
+        {
+          "idx": 3,
+          "chars": 32,
+          "seconds": 7.1,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 32
+        },
+        {
+          "idx": 4,
+          "chars": 35,
+          "seconds": 7.8,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 35
+        }
+      ],
+      "total_seconds": 28.5,
+      "target_seconds": 30.0,
+      "tolerance": 0.1,
+      "within_target": true,
+      "platform": "视频号",
+      "platform_range": [
+        15,
+        180
+      ],
+      "within_platform": true,
+      "ok": true
+    },
+    "final_check": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "cited_materials": [
+        "P02"
+      ],
+      "checked_numbers": [
+        "3000",
+        "5"
+      ],
+      "fabricated_numbers": []
+    },
+    "estimate_history": [
+      {
+        "total_seconds": 38.5,
+        "ok": false
+      },
+      {
+        "total_seconds": 28.5,
+        "ok": true
+      }
+    ],
+    "check_history": [
+      {
+        "ok": true,
+        "errors": []
+      }
+    ],
+    "steps": [
+      {
+        "step": 1,
+        "action": "search_materials",
+        "arguments": {
+          "query": "Lumi 智能台灯秋季推广 年轻白领"
+        },
+        "observation_summary": "命中 1 条：P02",
+        "decision_basis": "先检索与主题相关的产品素材。"
+      },
+      {
+        "step": 2,
+        "action": "search_materials",
+        "arguments": {
+          "query": "场景 空镜 桌面"
+        },
+        "observation_summary": "命中 2 条：P03, P06",
+        "decision_basis": "补充检索空镜/场景素材，用于分镜画面。"
+      },
+      {
+        "step": 3,
+        "action": "estimate_duration",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+            "shots": [
+              {
+                "visual": "产品：产品特写",
+                "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "产品：产品特写",
+                "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "功能：产品特写",
+                "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "收尾：产品特写",
+                "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "开场：桌面/夜景空镜",
+                "narration": "夜里加班到很晚，桌面只亮着一盏灯，光悄悄落在键盘上。",
+                "subtitle": "夜里加班到很晚，桌面只亮着一盏灯，光悄悄落在键盘上。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "场景：阅读场景",
+                "narration": "周末午后，翻开一本书，灯光调得很柔和。",
+                "subtitle": "周末午后，翻开一本书，灯光调得很柔和。",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "总时长 38.5s（目标 30.0s，ok=False，平台 [15, 180]）",
+        "decision_basis": "按素材事实写出首稿（约目标时长 1.25 倍），先估算时长。"
+      },
+      {
+        "step": 4,
+        "action": "estimate_duration",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+            "shots": [
+              {
+                "visual": "产品：产品特写",
+                "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "产品：产品特写",
+                "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "功能：产品特写",
+                "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "收尾：产品特写",
+                "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "总时长 28.5s（目标 30.0s，ok=True，平台 [15, 180]）",
+        "decision_basis": "总时长 38.5 秒与目标 30.0 秒偏差超限（超出），压缩旁白后重新估算（第 1 次修正）。"
+      },
+      {
+        "step": 5,
+        "action": "check_rules",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+            "shots": [
+              {
+                "visual": "产品：产品特写",
+                "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "产品：产品特写",
+                "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "功能：产品特写",
+                "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "收尾：产品特写",
+                "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "ok=True｜错误：无",
+        "decision_basis": "时长达标，进行品牌规则与事实追溯检查。"
+      },
+      {
+        "step": 6,
+        "action": "save_script",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+            "shots": [
+              {
+                "visual": "产品：产品特写",
+                "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "产品：产品特写",
+                "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "功能：产品特写",
+                "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "visual": "收尾：产品特写",
+                "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "已保存 S001｜28.5s",
+        "decision_basis": "估算与规则均通过，保存脚本。"
+      },
+      {
+        "step": 7,
+        "action": "finish",
+        "arguments": {
+          "summary": "脚本已保存（S001），总时长 28.5 秒，素材 P02，估算与规则检查均通过。"
+        },
+        "observation_summary": "给出最终结果",
+        "decision_basis": "收尾。"
+      }
+    ],
+    "tool_calls": 6,
+    "step_count": 7,
+    "publishing": "模拟环境：save_script 不产生任何外部动作"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "thought": "先检索与主题相关的产品素材。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "Lumi 智能台灯秋季推广 年轻白领"
+      },
+      "observation_summary": "命中 1 条：P02",
+      "observation": {
+        "query": "Lumi 智能台灯秋季推广 年轻白领",
+        "count": 1,
+        "hits": [
+          {
+            "id": "P02",
+            "title": "Lumi 智能台灯产品页",
+            "type": "product",
+            "tags": [
+              "台灯",
+              "产品",
+              "参数",
+              "暖光"
+            ],
+            "facts": [
+              "3000K 暖光",
+              "5 档亮度调节",
+              "支持语音控制",
+              "USB-C 充电"
+            ],
+            "score": 0.364
+          }
+        ]
+      },
+      "decision_basis": "先检索与主题相关的产品素材。"
+    },
+    {
+      "step": 2,
+      "thought": "补充检索空镜/场景素材，用于分镜画面。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "场景 空镜 桌面"
+      },
+      "observation_summary": "命中 2 条：P03, P06",
+      "observation": {
+        "query": "场景 空镜 桌面",
+        "count": 2,
+        "hits": [
+          {
+            "id": "P03",
+            "title": "桌面使用场景视频",
+            "type": "broll",
+            "tags": [
+              "场景",
+              "办公",
+              "阅读",
+              "桌面"
+            ],
+            "facts": [
+              "桌面办公场景",
+              "夜间阅读场景"
+            ],
+            "score": 0.667
+          },
+          {
+            "id": "P06",
+            "title": "城市夜景空镜",
+            "type": "broll",
+            "tags": [
+              "空镜",
+              "氛围",
+              "夜景"
+            ],
+            "facts": [],
+            "score": 0.333
+          }
+        ]
+      },
+      "decision_basis": "补充检索空镜/场景素材，用于分镜画面。"
+    },
+    {
+      "step": 3,
+      "thought": "按素材事实写出首稿（约目标时长 1.25 倍），先估算时长。",
+      "action": "estimate_duration",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+          "shots": [
+            {
+              "visual": "产品：产品特写",
+              "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "产品：产品特写",
+              "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "功能：产品特写",
+              "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "收尾：产品特写",
+              "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "开场：桌面/夜景空镜",
+              "narration": "夜里加班到很晚，桌面只亮着一盏灯，光悄悄落在键盘上。",
+              "subtitle": "夜里加班到很晚，桌面只亮着一盏灯，光悄悄落在键盘上。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "场景：阅读场景",
+              "narration": "周末午后，翻开一本书，灯光调得很柔和。",
+              "subtitle": "周末午后，翻开一本书，灯光调得很柔和。",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "总时长 38.5s（目标 30.0s，ok=False，平台 [15, 180]）",
+      "observation": {
+        "shots": [
+          {
+            "idx": 1,
+            "chars": 30,
+            "seconds": 6.7,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 30
+          },
+          {
+            "idx": 2,
+            "chars": 31,
+            "seconds": 6.9,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 31
+          },
+          {
+            "idx": 3,
+            "chars": 32,
+            "seconds": 7.1,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 32
+          },
+          {
+            "idx": 4,
+            "chars": 35,
+            "seconds": 7.8,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 35
+          },
+          {
+            "idx": 5,
+            "chars": 26,
+            "seconds": 5.8,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 26
+          },
+          {
+            "idx": 6,
+            "chars": 19,
+            "seconds": 4.2,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 19
+          }
+        ],
+        "total_seconds": 38.5,
+        "target_seconds": 30.0,
+        "tolerance": 0.1,
+        "within_target": false,
+        "platform": "视频号",
+        "platform_range": [
+          15,
+          180
+        ],
+        "within_platform": true,
+        "ok": false
+      },
+      "decision_basis": "按素材事实写出首稿（约目标时长 1.25 倍），先估算时长。"
+    },
+    {
+      "step": 4,
+      "thought": "总时长 38.5 秒与目标 30.0 秒偏差超限（超出），压缩旁白后重新估算（第 1 次修正）。",
+      "action": "estimate_duration",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+          "shots": [
+            {
+              "visual": "产品：产品特写",
+              "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "产品：产品特写",
+              "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "功能：产品特写",
+              "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "收尾：产品特写",
+              "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "总时长 28.5s（目标 30.0s，ok=True，平台 [15, 180]）",
+      "observation": {
+        "shots": [
+          {
+            "idx": 1,
+            "chars": 30,
+            "seconds": 6.7,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 30
+          },
+          {
+            "idx": 2,
+            "chars": 31,
+            "seconds": 6.9,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 31
+          },
+          {
+            "idx": 3,
+            "chars": 32,
+            "seconds": 7.1,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 32
+          },
+          {
+            "idx": 4,
+            "chars": 35,
+            "seconds": 7.8,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 35
+          }
+        ],
+        "total_seconds": 28.5,
+        "target_seconds": 30.0,
+        "tolerance": 0.1,
+        "within_target": true,
+        "platform": "视频号",
+        "platform_range": [
+          15,
+          180
+        ],
+        "within_platform": true,
+        "ok": true
+      },
+      "decision_basis": "总时长 38.5 秒与目标 30.0 秒偏差超限（超出），压缩旁白后重新估算（第 1 次修正）。"
+    },
+    {
+      "step": 5,
+      "thought": "时长达标，进行品牌规则与事实追溯检查。",
+      "action": "check_rules",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+          "shots": [
+            {
+              "visual": "产品：产品特写",
+              "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "产品：产品特写",
+              "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "功能：产品特写",
+              "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "收尾：产品特写",
+              "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "ok=True｜错误：无",
+      "observation": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "cited_materials": [
+          "P02"
+        ],
+        "checked_numbers": [
+          "3000",
+          "5"
+        ],
+        "fabricated_numbers": []
+      },
+      "decision_basis": "时长达标，进行品牌规则与事实追溯检查。"
+    },
+    {
+      "step": 6,
+      "thought": "估算与规则均通过，保存脚本。",
+      "action": "save_script",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+          "shots": [
+            {
+              "visual": "产品：产品特写",
+              "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "产品：产品特写",
+              "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "功能：产品特写",
+              "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "visual": "收尾：产品特写",
+              "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "已保存 S001｜28.5s",
+      "observation": {
+        "ok": true,
+        "duplicate": false,
+        "script_id": "S001",
+        "request_id": "Q4-01",
+        "title": "Lumi 智能台灯秋季推广｜轻快短视频",
+        "shots": [
+          {
+            "visual": "产品：产品特写",
+            "narration": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+            "subtitle": "Lumi 智能台灯，3000K 暖光不刺眼，映在纸上是很柔和的。",
+            "materials": [
+              "P02"
+            ],
+            "seconds": 6.7
+          },
+          {
+            "visual": "产品：产品特写",
+            "narration": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+            "subtitle": "5 档亮度调节，轻轻一按，总有一档适合此刻的你和眼前的桌面台面。",
+            "materials": [
+              "P02"
+            ],
+            "seconds": 6.9
+          },
+          {
+            "visual": "功能：产品特写",
+            "narration": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+            "subtitle": "支持语音控制，动动嘴就能调亮度，手里拿着书也不用起身去够那开关。",
+            "materials": [
+              "P02"
+            ],
+            "seconds": 7.1
+          },
+          {
+            "visual": "收尾：产品特写",
+            "narration": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+            "subtitle": "USB-C 充电，插上就能用，放在桌面上刚刚好，深夜收工时灯火慢慢变暗。",
+            "materials": [
+              "P02"
+            ],
+            "seconds": 7.8
+          }
+        ],
+        "total_seconds": 28.5,
+        "target_seconds": 30.0,
+        "platform": "视频号",
+        "materials": [
+          "P02"
+        ],
+        "disclaimer": null,
+        "saved_at": "2026-10-30T15:23:59",
+        "note": "脚本已保存（可编辑文本，模拟环境）"
+      },
+      "decision_basis": "估算与规则均通过，保存脚本。"
+    },
+    {
+      "step": 7,
+      "thought": "收尾。",
+      "action": "finish",
+      "arguments": {
+        "summary": "脚本已保存（S001），总时长 28.5 秒，素材 P02，估算与规则检查均通过。"
+      },
+      "observation_summary": "给出最终结果",
+      "decision_basis": "收尾。"
+    }
+  ]
+}

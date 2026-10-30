@@ -1,0 +1,80 @@
+{
+  "id": "Q4-04",
+  "scenario": "工具失败（时长估算服务不可用）",
+  "request": "工具失败（时长估算服务不可用）",
+  "acceptance": [
+    "工具失败"
+  ],
+  "task": {
+    "theme": "Lumi 智能台灯",
+    "audience": "年轻白领",
+    "platform": "视频号",
+    "target_seconds": 30,
+    "style": "轻快",
+    "scope_materials": null
+  },
+  "rules": {
+    "version": "2026-10-30",
+    "forbidden_terms": [
+      "全网第一",
+      "最好",
+      "绝对",
+      "100%",
+      "无敌",
+      "顶级",
+      "最低价"
+    ],
+    "blocked_materials": {
+      "P04": "竞品对比素材禁止用于对外内容（品牌合规）"
+    },
+    "disclaimer_requirements": {
+      "P05": {
+        "must_include": "活动规则以页面为准",
+        "field": "disclaimer",
+        "reason": "使用促销素材必须声明活动规则以页面为准"
+      }
+    },
+    "platforms": {
+      "抖音": {
+        "min_seconds": 15,
+        "max_seconds": 60
+      },
+      "视频号": {
+        "min_seconds": 15,
+        "max_seconds": 180
+      },
+      "小红书": {
+        "min_seconds": 10,
+        "max_seconds": 90
+      }
+    },
+    "duration_tolerance": 0.1,
+    "rules_text": [
+      "脚本中出现的数字必须能在所引用素材的事实中找到（禁止编造产品事实/效果数据）",
+      "每个分镜必须引用至少一个素材 ID，且必须有字幕文本",
+      "每句旁白读速按 4.5 字/秒估算，单分镜最短 2 秒",
+      "总时长需在目标时长 ±10% 以内，且符合平台时长限制",
+      "产品属性词（设计/外观/材质/续航/防水/静音/护眼/重量/价格/优惠/色温/亮度/功率/电池等）若出现在脚本中，必须能在所引用素材 facts 中找到"
+    ],
+    "product_attribute_terms": [
+      "设计",
+      "外观",
+      "材质",
+      "续航",
+      "防水",
+      "护眼",
+      "重量",
+      "价格",
+      "优惠",
+      "折扣",
+      "色温",
+      "亮度",
+      "功率",
+      "电池",
+      "寿命",
+      "保修"
+    ]
+  },
+  "existing_script": null,
+  "trap_first_draft": false
+}

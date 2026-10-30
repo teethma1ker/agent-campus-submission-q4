@@ -1,0 +1,2 @@
+# 仅使用 Python 标准库，Python >= 3.10
+# 测试：python -m unittest discover -s tests -v

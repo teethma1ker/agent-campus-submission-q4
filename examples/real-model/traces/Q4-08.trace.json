@@ -1,0 +1,436 @@
+{
+  "request": {
+    "id": "Q4-08",
+    "scenario": "执行上限（未完成状态）",
+    "request": "执行上限（未完成状态）",
+    "acceptance": [
+      "执行上限"
+    ],
+    "task": {
+      "theme": "Lumi 智能台灯",
+      "audience": "年轻白领",
+      "platform": "视频号",
+      "target_seconds": 30,
+      "style": "轻快",
+      "scope_materials": null
+    },
+    "rules": {
+      "version": "2026-10-30",
+      "forbidden_terms": [
+        "全网第一",
+        "最好",
+        "绝对",
+        "100%",
+        "无敌",
+        "顶级",
+        "最低价"
+      ],
+      "blocked_materials": {
+        "P04": "竞品对比素材禁止用于对外内容（品牌合规）"
+      },
+      "disclaimer_requirements": {
+        "P05": {
+          "must_include": "活动规则以页面为准",
+          "field": "disclaimer",
+          "reason": "使用促销素材必须声明活动规则以页面为准"
+        }
+      },
+      "platforms": {
+        "抖音": {
+          "min_seconds": 15,
+          "max_seconds": 60
+        },
+        "视频号": {
+          "min_seconds": 15,
+          "max_seconds": 180
+        },
+        "小红书": {
+          "min_seconds": 10,
+          "max_seconds": 90
+        }
+      },
+      "duration_tolerance": 0.1,
+      "rules_text": [
+        "脚本中出现的数字必须能在所引用素材的事实中找到（禁止编造产品事实/效果数据）",
+        "每个分镜必须引用至少一个素材 ID，且必须有字幕文本",
+        "每句旁白读速按 4.5 字/秒估算，单分镜最短 2 秒",
+        "总时长需在目标时长 ±10% 以内，且符合平台时长限制",
+        "产品属性词（设计/外观/材质/续航/防水/静音/护眼/重量/价格/优惠/色温/亮度/功率/电池等）若出现在脚本中，必须能在所引用素材 facts 中找到"
+      ],
+      "product_attribute_terms": [
+        "设计",
+        "外观",
+        "材质",
+        "续航",
+        "防水",
+        "护眼",
+        "重量",
+        "价格",
+        "优惠",
+        "折扣",
+        "色温",
+        "亮度",
+        "功率",
+        "电池",
+        "寿命",
+        "保修"
+      ]
+    },
+    "existing_script": null,
+    "trap_first_draft": false
+  },
+  "mode": "real",
+  "status": "incomplete_limit_reached",
+  "report": {
+    "request_id": "Q4-08",
+    "task": {
+      "theme": "Lumi 智能台灯",
+      "audience": "年轻白领",
+      "platform": "视频号",
+      "target_seconds": 30,
+      "style": "轻快",
+      "scope_materials": null
+    },
+    "status": "incomplete_limit_reached",
+    "status_note": "达到执行步数/工具调用上限，存在未完成步骤",
+    "model_summary": null,
+    "claim_check": {
+      "passed": true,
+      "issues": []
+    },
+    "saved_script": null,
+    "final_estimate": {
+      "shots": [
+        {
+          "idx": 1,
+          "chars": 17,
+          "seconds": 3.8,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 12
+        },
+        {
+          "idx": 2,
+          "chars": 25,
+          "seconds": 5.6,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 13
+        },
+        {
+          "idx": 3,
+          "chars": 20,
+          "seconds": 4.4,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 9
+        },
+        {
+          "idx": 4,
+          "chars": 14,
+          "seconds": 3.1,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 12
+        },
+        {
+          "idx": 5,
+          "chars": 20,
+          "seconds": 4.4,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 13
+        },
+        {
+          "idx": 6,
+          "chars": 21,
+          "seconds": 4.7,
+          "materials": [
+            "P02"
+          ],
+          "subtitle_chars": 15
+        }
+      ],
+      "total_seconds": 26.0,
+      "target_seconds": 30.0,
+      "tolerance": 0.1,
+      "within_target": false,
+      "platform": "视频号",
+      "platform_range": [
+        15,
+        180
+      ],
+      "within_platform": true,
+      "ok": false
+    },
+    "final_check": null,
+    "estimate_history": [
+      {
+        "total_seconds": 26.0,
+        "ok": false
+      }
+    ],
+    "check_history": [],
+    "steps": [
+      {
+        "step": 1,
+        "action": "search_materials",
+        "arguments": {
+          "query": "Lumi 智能台灯 参数"
+        },
+        "observation_summary": "命中 2 条：P01, P02",
+        "decision_basis": "需要先检索 Lumi 智能台灯的产品素材，获取可引用的事实与素材 ID。"
+      },
+      {
+        "step": 2,
+        "action": "estimate_duration",
+        "arguments": {
+          "script": {
+            "title": "Lumi 智能台灯｜加班夜的暖光搭子",
+            "shots": [
+              {
+                "narration": "下班回家，灯一开，房间就有了温度。",
+                "subtitle": "下班回家，灯一开就有温度",
+                "visual": "年轻白领推门进家，抬手开灯，暖光铺满书桌",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "Lumi 智能台灯，3000K 暖光，不刺眼，刚刚好。",
+                "subtitle": "3000K 暖光，柔和不刺眼",
+                "visual": "台灯特写，暖光洒在桌面书本上",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "5 档亮度随手调，追剧、看书、加班都合适。",
+                "subtitle": "5 档亮度，随手切换",
+                "visual": "手指轻触调光，画面亮度随档位变化",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "还能语音控制，躺着也能关灯。",
+                "subtitle": "支持语音控制，动口不动手",
+                "visual": "人物躺靠沙发说一句话，台灯应声关闭",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "USB-C 充电，桌面少一根线，清爽一点。",
+                "subtitle": "USB-C 充电，桌面更清爽",
+                "visual": "USB-C 接口特写，桌面线材整洁",
+                "materials": [
+                  "P02"
+                ]
+              },
+              {
+                "narration": "Lumi 智能台灯，把夜晚调成你喜欢的样子。",
+                "subtitle": "Lumi 智能台灯，调出你的夜晚",
+                "visual": "全景收尾，暖光下的书桌与人物剪影",
+                "materials": [
+                  "P02"
+                ]
+              }
+            ]
+          }
+        },
+        "observation_summary": "总时长 26.0s（目标 30.0s，ok=False，平台 [15, 180]）",
+        "decision_basis": "已有素材 P01、P02，主题/平台/时长齐全，可直接生成脚本。仅用 P02 的产品事实（3000K 暖光、5 档亮度、语音控制、USB-C 充电），不使用 P04，不涉及 P05 促销，无需免责声明。旁白控制在约 30 秒（约 135 字）。"
+      }
+    ],
+    "tool_calls": 2,
+    "step_count": 2,
+    "publishing": "模拟环境：save_script 不产生任何外部动作"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "thought": "需要先检索 Lumi 智能台灯的产品素材，获取可引用的事实与素材 ID。",
+      "action": "search_materials",
+      "arguments": {
+        "query": "Lumi 智能台灯 参数"
+      },
+      "observation_summary": "命中 2 条：P01, P02",
+      "observation": {
+        "query": "Lumi 智能台灯 参数",
+        "count": 2,
+        "hits": [
+          {
+            "id": "P01",
+            "title": "产品参数卡（字幕能力）",
+            "type": "spec",
+            "tags": [
+              "字幕",
+              "参数",
+              "功能"
+            ],
+            "facts": [
+              "支持字幕"
+            ],
+            "score": 0.2
+          },
+          {
+            "id": "P02",
+            "title": "Lumi 智能台灯产品页",
+            "type": "product",
+            "tags": [
+              "台灯",
+              "产品",
+              "参数",
+              "暖光"
+            ],
+            "facts": [
+              "3000K 暖光",
+              "5 档亮度调节",
+              "支持语音控制",
+              "USB-C 充电"
+            ],
+            "score": 1.0
+          }
+        ]
+      },
+      "decision_basis": "需要先检索 Lumi 智能台灯的产品素材，获取可引用的事实与素材 ID。"
+    },
+    {
+      "step": 2,
+      "thought": "已有素材 P01、P02，主题/平台/时长齐全，可直接生成脚本。仅用 P02 的产品事实（3000K 暖光、5 档亮度、语音控制、USB-C 充电），不使用 P04，不涉及 P05 促销，无需免责声明。旁白控制在约 30 秒（约 135 字）。",
+      "action": "estimate_duration",
+      "arguments": {
+        "script": {
+          "title": "Lumi 智能台灯｜加班夜的暖光搭子",
+          "shots": [
+            {
+              "narration": "下班回家，灯一开，房间就有了温度。",
+              "subtitle": "下班回家，灯一开就有温度",
+              "visual": "年轻白领推门进家，抬手开灯，暖光铺满书桌",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "Lumi 智能台灯，3000K 暖光，不刺眼，刚刚好。",
+              "subtitle": "3000K 暖光，柔和不刺眼",
+              "visual": "台灯特写，暖光洒在桌面书本上",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "5 档亮度随手调，追剧、看书、加班都合适。",
+              "subtitle": "5 档亮度，随手切换",
+              "visual": "手指轻触调光，画面亮度随档位变化",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "还能语音控制，躺着也能关灯。",
+              "subtitle": "支持语音控制，动口不动手",
+              "visual": "人物躺靠沙发说一句话，台灯应声关闭",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "USB-C 充电，桌面少一根线，清爽一点。",
+              "subtitle": "USB-C 充电，桌面更清爽",
+              "visual": "USB-C 接口特写，桌面线材整洁",
+              "materials": [
+                "P02"
+              ]
+            },
+            {
+              "narration": "Lumi 智能台灯，把夜晚调成你喜欢的样子。",
+              "subtitle": "Lumi 智能台灯，调出你的夜晚",
+              "visual": "全景收尾，暖光下的书桌与人物剪影",
+              "materials": [
+                "P02"
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "总时长 26.0s（目标 30.0s，ok=False，平台 [15, 180]）",
+      "observation": {
+        "shots": [
+          {
+            "idx": 1,
+            "chars": 17,
+            "seconds": 3.8,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 12
+          },
+          {
+            "idx": 2,
+            "chars": 25,
+            "seconds": 5.6,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 13
+          },
+          {
+            "idx": 3,
+            "chars": 20,
+            "seconds": 4.4,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 9
+          },
+          {
+            "idx": 4,
+            "chars": 14,
+            "seconds": 3.1,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 12
+          },
+          {
+            "idx": 5,
+            "chars": 20,
+            "seconds": 4.4,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 13
+          },
+          {
+            "idx": 6,
+            "chars": 21,
+            "seconds": 4.7,
+            "materials": [
+              "P02"
+            ],
+            "subtitle_chars": 15
+          }
+        ],
+        "total_seconds": 26.0,
+        "target_seconds": 30.0,
+        "tolerance": 0.1,
+        "within_target": false,
+        "platform": "视频号",
+        "platform_range": [
+          15,
+          180
+        ],
+        "within_platform": true,
+        "ok": false
+      },
+      "decision_basis": "已有素材 P01、P02，主题/平台/时长齐全，可直接生成脚本。仅用 P02 的产品事实（3000K 暖光、5 档亮度、语音控制、USB-C 充电），不使用 P04，不涉及 P05 促销，无需免责声明。旁白控制在约 30 秒（约 135 字）。"
+    }
+  ]
+}

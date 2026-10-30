@@ -1,0 +1,6 @@
+
+=== Q4-08｜执行上限（未完成状态）｜模型 real ===
+状态：incomplete_limit_reached（达到执行步数/工具调用上限，存在未完成步骤）｜步数 2｜工具调用 2
+脚本：未保存
+最终估算：26.0s（目标 30.0s，within_target=False，platform=True）
+模型总结：（无）
